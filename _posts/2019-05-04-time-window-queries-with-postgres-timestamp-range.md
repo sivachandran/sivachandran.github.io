@@ -4,8 +4,6 @@ title: "Optimising Time Window Queries with Postgres Timestamp Range Data Types"
 date: 2019-05-04 10:17:00 +0530
 tags: [postgres, database, sql]
 ---
-*This post is originally published in [Qube Cinema Engineering Blog](https://engineering.qubecinema.com/2019/05/04/time-window-queries-with-postgres-timestamp-range.html)*.
-
 This post explains how we were able to improve a database query performance by replacing two individual `timestamptz` columns with single Postgres's `tstzrange` range column.
 
 It all began when our operation team complaint that a particular report is taking really lots of time to generate. Initial analysis revealed the report spent most of the time in executing a particular query in our Postgres database. Though the query is joining(inner) three tables, the join and where clause are straightforward. We also confirmed indexes exist for the columns involved in join and where clause. So we fired up [pgHero](https://github.com/ankane/pghero) and generated the execution plan for the query. Loading the execution plan into [PEV](https://tatiyants.com/pev) indicated that the where clause on timestamp columns are not using the indexes and had to scan all rows.
@@ -89,3 +87,5 @@ We were happy that we not only made the query fast but also learned something ne
 
 ### References
 [Postgres Range Types](https://www.postgresql.org/docs/11/rangetypes.html)
+
+*This post is originally published in [Qube Cinema Engineering Blog](https://engineering.qubecinema.com/2019/05/04/time-window-queries-with-postgres-timestamp-range.html)*.
