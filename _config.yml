@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: Sivachandran personal website
+#title: Sivachandran personal website
 
 # Short description of your site
 description: Personal website where I share my experiences with technologies.
@@ -65,7 +65,7 @@ author:
 social-network-links:
   rss: true
   github: sivachandran
-  linkedin: sivachandrano
+  linkedin: sivachandranp
   stackoverflow: "216534/sivachandran"
 
 # Select which share links to show in posts
@@ -76,7 +76,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "sivachandran.in"  # eg. "deanattali.com/beautiful-jekyll"
+#url-pretty: "sivachandran.in"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
