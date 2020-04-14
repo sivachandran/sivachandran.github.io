@@ -147,7 +147,7 @@ date_format: "%B %-d, %Y"
 timezone: "Asia/Kolkata"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+permalink: /:year-:month-:title/
 paginate: 5
 
 kramdown:
