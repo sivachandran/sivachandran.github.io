@@ -1,6 +1,6 @@
 ---
 layout: page
-title: OSS Contributions
+title: Open-Source Software Contributions
 subtitle: My contributions to open-source software community.
 ---
 
