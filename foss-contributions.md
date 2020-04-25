@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Open-Source Software Contributions
-subtitle: My contributions to open-source software community.
+title: Free and Open-Source Software Contributions
+subtitle: My contributions to FOSS community.
+redirect_from: "/oss-contributions"
 ---
 
 1. [TermEmulator](https://github.com/sivachandran/TermEmulator) - A pure python module for emulating V100 terminal. [PyPI](https://pypi.org/project/TermEmulator/)
