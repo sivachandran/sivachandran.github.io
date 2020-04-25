@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Free and Open-Source Software Contributions
-subtitle: My contributions to FOSS community.
+title: FOSS Contributions
+subtitle: My contributions to Free and Open-Source Software community.
 redirect_from: "/oss-contributions"
 ---
 
