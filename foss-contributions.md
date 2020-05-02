@@ -12,3 +12,4 @@ redirect_from: "/oss-contributions"
 1. [libs3](https://github.com/bji/libs3) - BUGFIX: OSX build error due to uint64_t format string incompatibility. [PR](https://github.com/bji/libs3/pull/47), [Commit](https://github.com/bji/libs3/commit/731a009ab6aa7af3fe0e2910d7d7c057f08a45cf)
 1. [dcp_inspect](https://github.com/wolfgangw/backports) - Dockerized version of Digital Cinema Package(DCP) deep inspect tool. [Docker Image](https://hub.docker.com/r/qubecinema/dcp_inspect)
 1. [asdcplib-tools](https://github.com/cinecert/asdcplib) - Dockerized version of Digital Cinema Package(DCP) tools. [Docker Image](https://hub.docker.com/r/qubecinema/asdcplib-tools)
+1. [OdsToNLog](https://github.com/sivachandran/OdsToNLog) - OdsToNLog is a very simple program which captures Win32 OutputDebugString messages and converts them into [NLog](http://nlog-project.org/) log messages.
