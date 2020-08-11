@@ -88,4 +88,4 @@ We were happy that we not only made the query fast but also learned something ne
 ### References
 [Postgres Range Types](https://www.postgresql.org/docs/11/rangetypes.html)
 
-*This post is originally published in [Qube Cinema Engineering Blog](https://engineering.qubecinema.com/2019/05/04/time-window-queries-with-postgres-timestamp-range.html)*.
+*This post is originally published [here](https://engineering.qubecinema.com/2019/05/04/time-window-queries-with-postgres-timestamp-range.html)*.
