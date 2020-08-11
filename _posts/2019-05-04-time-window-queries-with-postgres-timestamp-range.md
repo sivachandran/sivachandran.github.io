@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Optimising Time Window Queries with Postgres Timestamp Range Data Types"
+title: "Optimising time window queries with Postgres timestamp range data types"
 date: 2019-05-04 10:17:00 +0530
 tags: [postgres, database, sql]
 ---
