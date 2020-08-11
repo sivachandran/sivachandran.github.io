@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Load Balancing iPerf3 Servers"
+title: "Load balancing iPerf3 servers"
 featured: true
 author: sivachandran
 comments: true
