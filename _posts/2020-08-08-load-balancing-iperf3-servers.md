@@ -4,7 +4,7 @@ title: "Load Balancing iPerf3 Servers"
 featured: true
 author: sivachandran
 comments: true
-tags: [ linux ]
+tags: [ linux, network ]
 ---
 
 Recently I had to set up a TCP load balancer for iperf3 server to allow simultaneous tests from multiple iperf3 clients. [iperf3][1] is a tool to measure network performance, and I used [Balance][2] as the load balancer. This post describes the need and steps to run iperf3 servers behind a TCP load balancer running on the same host.
