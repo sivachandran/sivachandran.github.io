@@ -6,6 +6,7 @@ redirect_from: "/oss-contributions"
 ---
 
 1. [TermEmulator](https://github.com/sivachandran/TermEmulator) - A pure python module for emulating V100 terminal. [PyPI](https://pypi.org/project/TermEmulator/)
+1. [bin2h.cmake](https://github.com/sivachandran/cmake-bin2h) - Pure CMake function to convert any file into C/C++ header, implemented with only CMake commands.
 1. [log4cplus](https://github.com/log4cplus/log4cplus) - FEATURE: Support for Log4J UDP appender. [Patch](https://sourceforge.net/p/log4cplus/mailman/message/29610399/), [Commit](https://github.com/log4cplus/log4cplus/blob/master/src/log4judpappender.cxx)
 1. [gst-libav](https://gstreamer.freedesktop.org/modules/gst-libav.html) - BUGFIX: Setting same caps resets decoder. [Bug](https://bugzilla.gnome.org/show_bug.cgi?id=697548), [Commit](https://gitlab.freedesktop.org/gstreamer/gst-libav/commit/758d7bf7ea516e824a536cd6a12d45aa07e483fa)
 1. [udt-tunnel](https://github.com/RealImage/udt-tunnel) - A command-line app to tunnel TCP through UDT and vice-versa.
