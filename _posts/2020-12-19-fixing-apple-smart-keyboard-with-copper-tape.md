@@ -23,9 +23,9 @@ I did some research on the Internet and found out that many people had faced the
 
 Apple Smart Keyboard uses conductive tapes to connect the Smart Connectors with keyboard electronics. Allegedly, there are two common issues with this connection. Either the connection between Smart Connectors and conductive tape is worn out(as it happened in my case) or the conductive tape itself is worn out(as shown in the YouTube video). In both cases, the keyboard wouldn't get recognized by the iPad.
 
-![Smart Keyboard Connector Pins](/assets/smart-keyboard-connector-pins.jpeg)
+![Smart Keyboard Connector Pins](/img/smart-keyboard-connector-pins.jpeg)
 
-![Smart Keyboard Schematic](/assets/smart-keyboard-schematic.jpeg)
+![Smart Keyboard Schematic](/img/smart-keyboard-schematic.jpeg)
 
 ## Fix
 
@@ -33,9 +33,9 @@ The fix is as simple as reestablishing the connection between Smart Connector an
 
 The YouTube videos tried best to hide the patchwork within the outer layer of the keyboard. The videos soldered a thin wired between the Smart Connector and the conductive to hide the patchwork. Despite having soldering kit and having done soldering multiple times, I am not good at soldering tiny components. I was concerned about damaging the Smart Connector pins or the keyboard shell. At the same time, I wasn't too much concerned aesthetic. So, I decided to avoid soldering and keep all the patchwork on the outer layer of the keyboard itself.
 
-![Smart Keyboard Connector Pins Fix](/assets/smart-keyboard-fix.jpeg)
+![Smart Keyboard Connector Pins Fix](/img/smart-keyboard-fix.jpeg)
 
-![Smart Keyboard Schematic Fix](/assets/smart-keyboard-schematic-fix.jpeg)
+![Smart Keyboard Schematic Fix](/img/smart-keyboard-schematic-fix.jpeg)
 
 ### Step 1 - Peeling off the outer layer
 
@@ -55,9 +55,9 @@ Beforehand, I bought a Copper Tape roll[3] from Amazon. I started laying the tap
 
 **Note 1:** The two sides of the copper tape are not interconnected or at least in the one I purchased. So, if the copper tape touches the Smart Connector on the top side, but the conductive tape is connected on the bottom side of the copper tape, then there won't be any connection between the Smart Connector and conductive tape. The trick is to lay another layer of copper tape connecting the top side of copper tape and conductive tape.
 
-![Copper Tape without Overlay](/assets/copper-tape-without-overlay.jpeg)
+![Copper Tape without Overlay](/img/copper-tape-without-overlay.jpeg)
 
-![Copper Tape with Overlay](/assets/copper-tape-with-overlay.jpeg)
+![Copper Tape with Overlay](/img/copper-tape-with-overlay.jpeg)
 
 **Note 2**: While laying the copper tape, I was worried the iPad body may short-circuit the copper tape connections. Fortunately, the iPad body doesn't conduct electricity(confirmed with a multimeter) despite the body made from an aluminium frame. Maybe, it is coated with a non-conductive material, lucky for me.
 
