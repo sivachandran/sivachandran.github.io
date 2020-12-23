@@ -33,7 +33,7 @@ The fix is as simple as reestablishing the connection between Smart Connector an
 
 The YouTube videos tried best to hide the patchwork within the outer layer of the keyboard. The videos soldered a thin wired between the Smart Connector and the conductive to hide the patchwork. Despite having soldering kit and having done soldering multiple times, I am not good at soldering tiny components. I was concerned about damaging the Smart Connector pins or the keyboard shell. At the same time, I wasn't too much concerned aesthetic. So, I decided to avoid soldering and keep all the patchwork on the outer layer of the keyboard itself.
 
-![Smart Keyboard Connector Pins Fix](/img/smart-keyboard-fix.jpg)
+![Smart Keyboard Connector Pins Fix](/img/smart-keyboard-final-fix.jpg)
 
 ![Smart Keyboard Schematic Fix](/img/smart-keyboard-schematic-fix.jpg)
 
