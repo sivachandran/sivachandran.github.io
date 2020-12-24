@@ -31,7 +31,7 @@ Apple Smart Keyboard uses conductive tapes to connect the Smart Connectors with 
 
 The fix is as simple as reestablishing the connection between Smart Connector and conductive tape or between the disconnected areas of the conductive tape.
 
-The YouTube videos tried best to hide the patchwork within the outer layer of the keyboard. The videos soldered a thin wired between the Smart Connector and the conductive to hide the patchwork. Despite having soldering kit and having done soldering multiple times, I am not good at soldering tiny components. I was concerned about damaging the Smart Connector pins or the keyboard shell. At the same time, I wasn't too much concerned aesthetic. So, I decided to avoid soldering and keep all the patchwork on the outer layer of the keyboard itself.
+The YouTube videos tried best to hide the patchwork within the outer layer of the keyboard. The videos soldered a thin wire between the Smart Connector and the conductive tape to hide the patchwork. Despite having a soldering kit and having done soldering multiple times, I am not good at soldering tiny components. I was concerned about damaging the Smart Connector pins or the keyboard shell. At the same time, I wasn't too concerned about aesthetics. So, I decided to avoid soldering and keep all the patchwork on the outer layer of the keyboard itself.
 
 ![Smart Keyboard Fix](/img/smart-keyboard-final-fix.jpg)<!-- .element height="50%" width="50%" -->
 
