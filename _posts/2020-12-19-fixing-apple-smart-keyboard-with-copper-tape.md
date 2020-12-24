@@ -41,7 +41,7 @@ The YouTube videos tried best to hide the patchwork within the outer layer of th
 
 This was easier than I anticipated. I don't know whether it was because of the one year use or use of weak glue in manufacturing, the outer layer of the keyboard came off neatly without much of struggle. The trick is finding the starting point where the outer layer is already detached from the inner frame.
 
-![Partially Peeled Outer Layer](/img/smart-keyboard-schematic-fix.jpg)
+![Partially Peeled Outer Layer](/img/smart-keyboard-peeling.jpg)
 
 ### Step 2 - Identifying disconnection
 
