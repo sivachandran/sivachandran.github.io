@@ -17,7 +17,7 @@ I took the keyboard to Apple authorized service centre, which is run by the same
 
 After confirming the problem is on the keyboard, they checked the warranty and realized it has expired one month back. Apparently, Apple has a replacement program for Smart Keyboard(they didn't say it was a manufacturing defect, but I wonder why else they have replacement program). But, they were not sure whether my keyboard is covered under the program. They asked me to hand over the keyboard and said they would call me once they hear back from Apple. I got a call in two days, and I was told Apple can't provide a replacement. I insisted on providing a replacement or at least repair it as it is just one month past from the warranty period. They said they can neither provide replacement nor repair as these keyboards non-serviceable. The only option they offered me was buying a new Apple Smart Keyboard, which would cost around Rs.14,000.
 
-I did some research on the Internet and found out that many people had faced the same issue with Apple Smart Keyboard. I also found YouTube videos [1], [2] explaining how we can fix it with copper tapes or soldering.
+I did some research on the Internet and found out that many people had faced the same issue with Apple Smart Keyboard. I also found YouTube videos [1](https://youtu.be/buNYHzMZJdk), [2](https://youtu.be/_F6_bCFMT0k) explaining how we can fix it with copper tapes or soldering.
 
 ## Cause
 
@@ -33,17 +33,19 @@ The fix is as simple as reestablishing the connection between Smart Connector an
 
 The YouTube videos tried best to hide the patchwork within the outer layer of the keyboard. The videos soldered a thin wire between the Smart Connector and the conductive tape to hide the patchwork. Despite having a soldering kit and having done soldering multiple times, I am not good at soldering tiny components. I was concerned about damaging the Smart Connector pins or the keyboard shell. At the same time, I wasn't too concerned about aesthetics. So, I decided to avoid soldering and keep all the patchwork on the outer layer of the keyboard itself.
 
-![Smart Keyboard Fix](/img/smart-keyboard-final-fix.jpg)<!-- .element height="50%" width="50%" -->
+![Patched Smart Keyboard Connector Pins](/img/smart-keyboard-final-fix.jpg)<!-- .element height="50%" width="50%" -->
 
-![Smart Keyboard Schematic Fix](/img/smart-keyboard-schematic-fix.jpg)
+![Patched Smart Keyboard Schematic](/img/smart-keyboard-schematic-fix.jpg)
 
 ### Step 1 - Peeling off the outer layer
 
 This was easier than I anticipated. I don't know whether it was because of the one year use or use of weak glue in manufacturing, the outer layer of the keyboard came off neatly without much of struggle. The trick is finding the starting point where the outer layer is already detached from the inner frame.
 
+![Partially Peeled Outer Layer](/img/smart-keyboard-schematic-fix.jpg)
+
 ### Step 2 - Identifying disconnection
 
-Once the outer layer is peeled off, the conductive tapes are readily visible and accessible. Use a multimeter or continuity tester to check the connection between each Smart Connector pins and the conductive tapes. There should be one or more disconnections. If you don't find a disconnection, then it must be a different problem why your keyboard is not getting recognized by the iPad, and the following steps won't help.
+Once the outer layer is peeled off, the conductive tapes are readily visible and accessible. Use a multimeter or continuity tester to check the connection between each Smart Connector pins and the conductive tapes. There should be one or more disconnections. If you don't find a disconnection, then you might have a different problem from me and these steps wont work.
 
 In my case, the **Power** and **Data** connections(pin 2 & 3 from left) were disconnected. The conductive tape itself looked fine as I tried checking the continuity between different points within the tape.
 
@@ -51,7 +53,9 @@ In my case, the **Power** and **Data** connections(pin 2 & 3 from left) were dis
 
 This was the challenging part for me due to my larger fingers. The Smart Connector pins are tiny, and the gap between them is small. I have to lay the copper tape from the pins to the respective conductive tapes without short-circuiting. I had to redo it a couple times before doing it right.
 
-Beforehand, I bought a Copper Tape roll[3] from Amazon. I started laying the tape on top of the Smart Connector pin and laid it all the way to the conductive tape on the keyboard.
+Beforehand, I bought a [Copper Tape roll from Amazon](https://www.amazon.in/gp/product/B07VQXNF27/ref=ppx_yo_dt_b_asin_title_o01_s00). I started laying the tape on top of the Smart Connector pin and laid it all the way to the conductive tape on the keyboard.
+
+![Copper Tape](/img/copper-tape.jpg)
 
 **Note 1:** The two sides of the copper tape are not interconnected or at least in the one I purchased. So, if the copper tape touches the Smart Connector on the top side, but the conductive tape is connected on the bottom side of the copper tape, then there won't be any connection between the Smart Connector and conductive tape. The trick is to lay another layer of copper tape connecting the top side of copper tape and conductive tape.
 
@@ -63,7 +67,7 @@ Beforehand, I bought a Copper Tape roll[3] from Amazon. I started laying the tap
 
 Once the connections are reestablished with copper tape, I confirmed the connections between Smart Connector pins and the respective conductive tapes using a multimeter. The connections are good.
 
-Hoping the connection should have the fixed the issue, I connected the iPad to the keyboard and positioned the iPad in docking position. Then I opened an editable widget and voila, it worked! The on-screen keyboard didn't appear, and key presses on the Smart Keyboard was recognized. I was screaming with my sons(who were watching and helping me in this whole process) that "We fixed it".
+Hoping the connection should have the fixed the issue, I connected the iPad to the keyboard and positioned the iPad in docking position. Then I opened an editable widget and voila, it worked! The on-screen keyboard didn't appear, and key presses on the Smart Keyboard was recognized. I was cheering with my sons(who were watching and helping me in this whole process) that "***We fixed it!***".
 
 ### Step 4 - Wrapping it up
 
