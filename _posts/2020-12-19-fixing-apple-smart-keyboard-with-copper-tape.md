@@ -23,9 +23,9 @@ I did some research on the Internet and found out that many people had faced the
 
 Apple Smart Keyboard uses conductive tapes to connect the Smart Connectors with keyboard electronics. Allegedly, there are two common issues with this connection. Either the connection between Smart Connectors and conductive tape is worn out(as it happened in my case) or the conductive tape itself is worn out(as shown in the YouTube video). In both cases, the keyboard wouldn't get recognized by the iPad.
 
-![Smart Keyboard Connector Pins](/img/smart-keyboard-connector-pins.jpg)
+![Smart Keyboard Connector Pins](/assets/smart-keyboard-connector-pins.jpg)
 
-![Smart Keyboard Schematic](/img/smart-keyboard-schematic.jpg)
+![Smart Keyboard Schematic](/assets/smart-keyboard-schematic.jpg)
 
 ## Fix
 
@@ -33,15 +33,15 @@ The fix is as simple as reestablishing the connection between Smart Connector an
 
 The YouTube videos tried best to hide the patchwork within the outer layer of the keyboard. The videos soldered a thin wire between the Smart Connector and the conductive tape to hide the patchwork. Despite having a soldering kit and having done soldering multiple times, I am not good at soldering tiny components. I was concerned about damaging the Smart Connector pins or the keyboard shell. At the same time, I wasn't too concerned about aesthetics. So, I decided to avoid soldering and keep all the patchwork on the outer layer of the keyboard itself.
 
-![Patched Smart Keyboard Connector Pins](/img/smart-keyboard-final-fix.jpg)<!-- .element height="50%" width="50%" -->
+![Patched Smart Keyboard Connector Pins](/assets/smart-keyboard-final-fix.jpg)<!-- .element height="50%" width="50%" -->
 
-![Patched Smart Keyboard Schematic](/img/smart-keyboard-schematic-fix.jpg)
+![Patched Smart Keyboard Schematic](/assets/smart-keyboard-schematic-fix.jpg)
 
 ### Step 1 - Peeling off the outer layer
 
 This was easier than I anticipated. I don't know whether it was because of the one year use or use of weak glue in manufacturing, the outer layer of the keyboard came off neatly without much of struggle. The trick is finding the starting point where the outer layer is already detached from the inner frame.
 
-![Partially Peeled Outer Layer](/img/smart-keyboard-peeling.jpg)
+![Partially Peeled Outer Layer](/assets/smart-keyboard-peeling.jpg)
 
 ### Step 2 - Identifying disconnection
 
@@ -55,13 +55,13 @@ This was the challenging part for me due to my larger fingers. The Smart Connect
 
 Beforehand, I bought a [Copper Tape roll from Amazon](https://www.amazon.in/gp/product/B07VQXNF27/ref=ppx_yo_dt_b_asin_title_o01_s00). I started laying the tape on top of the Smart Connector pin and laid it all the way to the conductive tape on the keyboard.
 
-![Copper Tape](/img/copper-tape.jpg)
+![Copper Tape](/assets/copper-tape.jpg)
 
 **Note 1:** The two sides of the copper tape are not interconnected or at least in the one I purchased. So, if the copper tape touches the Smart Connector on the top side, but the conductive tape is connected on the bottom side of the copper tape, then there won't be any connection between the Smart Connector and conductive tape. The trick is to lay another layer of copper tape connecting the top side of copper tape and conductive tape.
 
-![Copper Tape without Overlay](/img/copper-tape-without-overlay.jpg)
+![Copper Tape without Overlay](/assets/copper-tape-without-overlay.jpg)
 
-![Copper Tape with Overlay](/img/copper-tape-with-overlay.jpg)
+![Copper Tape with Overlay](/assets/copper-tape-with-overlay.jpg)
 
 **Note 2**: While laying the copper tape, I was worried the iPad body may short-circuit the copper tape connections. Fortunately, the iPad body doesn't conduct electricity(confirmed with a multimeter) despite the body made from an aluminium frame. Maybe, it is coated with a non-conductive material, lucky for me.
 
