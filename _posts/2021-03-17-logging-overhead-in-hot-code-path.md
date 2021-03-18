@@ -7,7 +7,7 @@ comments: true
 tags: [ go, optimization ]
 ---
 
-This post will describe how logging in a hot code path can induce significant overhead to the implementation.
+This post will describe how logging in a hot code path can induce significant overhead to the implementation. Though the overhead is described in the context Go program, the logging overhead should be similar in other languages as well.
 
 I was trying to improve a particular API throughput of a web service. I was using Gatling script to do the load testing of the API. When I started, the API was hardly touching 200 Requests-Per-Second(RPS). 
 
