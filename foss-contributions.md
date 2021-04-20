@@ -5,6 +5,7 @@ subtitle: My contributions to Free and Open-Source Software community.
 redirect_from: "/oss-contributions"
 ---
 
+1. [Rust Coreutils](https://github.com/uutils/coreutils) - Muliple contributions to Rust implementation of GNU coreutils. [PRs](https://github.com/uutils/coreutils/pulls?q=is%3Apr+author%3Asivachandran)
 1. [TermEmulator](https://github.com/sivachandran/TermEmulator) - A pure python module for emulating V100 terminal. [PyPI](https://pypi.org/project/TermEmulator/)
 1. [bin2h.cmake](https://github.com/sivachandran/cmake-bin2h) - Pure CMake function to convert any file into C/C++ header, implemented with only CMake commands.
 1. [log4cplus](https://github.com/log4cplus/log4cplus) - FEATURE: Support for Log4J UDP appender. [Patch](https://sourceforge.net/p/log4cplus/mailman/message/29610399/), [Commit](https://github.com/log4cplus/log4cplus/blob/master/src/log4judpappender.cxx)
