@@ -8,7 +8,7 @@ I am working on a product whose back-end is implemented as collection of micro s
 
 One of the back-end service(Service-A) is exposed to internet through HTTP APIs. The front-end communicates with back-end through this service. Initially we thought of making this service aware of all the running instances of the services through service registry like mechanism. But we felt we are complicating Service-A implementation and adding unnecessary coupling with other services. In this approach, every time we add new service we need to make changes in Service-A to make it aware of the new service instances. So we dropped this plan.
 
-![without Roll-call](/assets/roll-call-microservices-architecture-without-roll-call.png)
+![without Roll-call](/img/roll-call - coupled approach.jpeg)
 
 One of the back-end service(Service-A) is exposed to internet through HTTP APIs. The front-end communicates with back-end through this service. Initially we thought of making this service aware of all the running instances of the services through service registry like mechanism. But we felt we are complicating Service-A implementation and adding unnecessary coupling with other services. In this approach, every time we add new service we need to make changes in Service-A to make it aware of the new service instances. So we dropped this plan.
 
@@ -16,7 +16,7 @@ The brainstorming continued, one idea lead to another idea and suddenly we remem
 
 We realized a similar approach can be used to implement the requirement. We made the Service-A to broadcast a "roll-call" message to all running service instances. Upon receiving this message, the service instances will respond an "alive" message with metadata like name, ip, instance-id, etc. After broadcasting the "roll-call" message, Service-A will wait for fixed amount time and collect all "alive" messages during this period. This process is triggered by an API call and the metadata about service instances are returned as response.
 
-![with Roll-call](/assets/roll-call-microservices-architecture-with-roll-call.png)
+![with Roll-call](/img/roll-call - decoupled approach.jpeg)
 
 The advantage of this approach is we don't need to make Service-A aware of all running service instances. We can add new services or their instances at anytime and the same API will be able to fetch information about newly added service/instance.
 
