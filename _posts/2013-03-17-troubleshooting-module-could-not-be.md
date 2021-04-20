@@ -10,7 +10,7 @@ In this post I am going to share a technique to troubleshoot "module could not b
 ### The Problem
 To demonstrate the problem I am going to create an managed/.NET console app which depends on C++/CLI DLL which in-turn depends on a native Win32 DLL. The dependency looks like below
 
-![Dependency](/img/cli-app-dependency.png)
+![Dependency](/img/cli-app-dependency.jpg)
 
 and the implementation of executable and DLLs are
 
@@ -91,7 +91,7 @@ Unhandled Exception: System.IO.FileNotFoundException: The specified module could
 
 the exception is exactly same even if we run the ManagedApp.exe in Visual Studio debug mode
 
-![Debug Screenshot 1](/img/debug-screenshot.png)
+![Debug Screenshot 1](/img/debug-screenshot.jpg)
 
 the exception doesn't provide any clue about which DLL is missing. If the application depends on small no. of DLLs(like the ManagedApp.exe) then it is relatively easy to guess which DLL could be missing. But it will be really difficult to guess if the application depends(directly and indirectly) on more no. of (e.g. 20+) DLLs. It will be even more difficult if one of our dependency DLL assumes presence of system wide DLL like libcrypto.dll(part of OpenSSL).
 
@@ -118,12 +118,12 @@ So to find out the missing DLL start the ProcessMonitor with the following captu
 - Add highlighting for "Path" field ending with value "dll"
 - Add highlighting for "Result" field containing with value "NOT FOUND"
 
-![Debug Screenshot 2](/img/debug-screenshot-2.png)
-![Debug Screenshot 3](/img/debug-screenshot-3.png)
+![Debug Screenshot 2](/img/debug-screenshot-2.jpg)
+![Debug Screenshot 3](/img/debug-screenshot-3.jpg)
 
 now run the application and it will show the same error message that we've observed earlier. Now stop capturing events in the ProcessMonitor and look for for highlighted row starting from the latest event(bottom) to oldest event(top). When you find a highlighted row observe the corresponding DLL file name and make sure the same DLL file name is not opened successfully in the future(towards bottom) or past(towards top). You can also narrow down the search space by considering file opening attempt that happened only in the application directory(the directory where ManagedApp.exe present).
 
-![Debug Screenshot 4](/img/debug-screenshot-4.png)
+![Debug Screenshot 4](/img/debug-screenshot-4.jpg)
 
 in the above screenshot the red highlighted row shows that an attempt to open "NativeDll.dll" failed and the loader tries to open the DLL in various other places like "C:\Windows\system" and etc. If you fully analyze the events you can confirm that all attempts to open the DLL would have failed. So this clearly shows that the missing DLL is "NativeDll.dll" file.
 
